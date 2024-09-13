@@ -54,7 +54,16 @@ function q5_4_5(){
 
   console.log(playerList[1].favorites[1]);
 
-  console.log( (playerList[0].age + playerList[1].age + playerList[2].age) / 3);
+  let num=0;
+
+  for(let i=0;i<playerList.length;i++){
+    num += playerList[i].age;
+
+    if(i===playerList - 1){
+      num =  num / playerList.length
+      console.log(num);
+    }
+  }
 }
 
 q5_4_5();
