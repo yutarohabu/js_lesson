@@ -207,9 +207,8 @@ q6_4();
 // Q5
 function q6_5(){
   let mixed = [4, '2', 5, '8', '9', 0, 1];
-  let i = 0;
 
-  for(let i = 0; i < 7; i++){
+  for(let i = 0; i < mixed.length; i++){
     if( typeof mixed[i] === 'number' && mixed[i] % 2 === 0){
       console.log('even');
     }else if(typeof mixed[i] === 'number' && mixed[i] % 2 > 0){
