@@ -1,25 +1,25 @@
 // Section5
 // Q1
-function q5_1(){
+function showMessage(){
   let nickname = 'ゆーぴー';
   let age = 25;
 
   console.log('私のニックネームは' + nickname + 'です。年齢は' + age + '歳です。');
 }
 
-q5_1();
+showMessage();
 
 // Q2
-function q5_2(){
+function templateRitteral(){
   let languages = ['JavaScript','PHP','Ruby','Python','Go'];
 
   console.log(`私の好きな言葉は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`);
 }
 
-q5_2();
+templateRitteral();
 
 // Q3
-function q5_3(){
+function showArray(){
   let user = {
     name: 'John',
     age: 26,
@@ -30,10 +30,10 @@ function q5_3(){
   console.log(user.age);
 }
 
-q5_3();
+showArray();
 
 // Q4,Q5
-function q5_4_5(){
+function showObject(){
   let playerList = [
     {
       name: 'John',
@@ -66,10 +66,10 @@ function q5_4_5(){
   }
 }
 
-q5_4_5();
+showObject();
 
 // Q6
-function q5_6(){
+function functionQuestion(){
   function sayHello(){
     console.log('Hello');
   }
@@ -77,10 +77,10 @@ function q5_6(){
   sayHello();
 }
 
-q5_6();
+functionQuestion();
 
 // Q7
-function q5_7(){
+function addProperties(){
   let user = {
     name: 'John',
     age: 26,
@@ -98,10 +98,10 @@ function q5_7(){
 
 }
 
-q5_7();
+addProperties();
 
 // Q8
-function q5_8(){
+function addMethods(){
   let x;
   let y;
   let calc = {
@@ -130,10 +130,10 @@ function q5_8(){
 
 }
 
-q5_8();
+addMethods();
 
 // Q9
-function q5_9(){
+function useArgument(){
   let x;
   let y;
 
@@ -150,7 +150,7 @@ function q5_9(){
   
 }
 
-q5_9();
+useArgument();
 
 // Q10
 // xのスコープの範囲は関数foo内だけなので、コンソールは参照できる範囲から外れているのでエラーがでます。
@@ -159,23 +159,23 @@ q5_9();
 
 // Section6
 // Q1
-function q6_1(){
+function randomNumber(){
   console.log(Math.floor(Math.random() * 9));
 }
 
-q6_1();
+randomNumber();
 
 // Q2
-function q6_2(){
+function showDelay(){
 
   setTimeout(function(){console.log('Hello World!')}, 3000);
 
 }
 
-q6_2();
+showDelay();
 
 //Q3
-function q6_3(){
+function judgeNumber(){
   let num;
 
   num = 5;
@@ -189,10 +189,10 @@ function q6_3(){
   }
 }
 
-q6_3();
+judgeNumber();
 
 //Q4
-function q6_4(){
+function showNumberLoop(){
   let numbers = [];
 
   for(let i = 0; i < 100; i++){
@@ -202,10 +202,10 @@ function q6_4(){
 
 }
 
-q6_4();
+showNumberLoop();
 
 // Q5
-function q6_5(){
+function judgeArray(){
   let mixed = [4, '2', 5, '8', '9', 0, 1];
 
   for(let i = 0; i < mixed.length; i++){
@@ -220,4 +220,4 @@ function q6_5(){
 
 }
 
-q6_5();
+judgeArray();
